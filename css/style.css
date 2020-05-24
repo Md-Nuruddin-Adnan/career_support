@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+ 
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+   
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none!important;
+}
+
+body {
+  background: #fff;
+  color: #515151;
+  font-family: 'Montserrat', sans-serif;
+}
+/* basic css end */
+
+/* common css start */
+.sec-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 500;
+  color: #2B2D3A;
+  text-align: center;
+}
+.top-title {
+  font-weight: 500;
+  font-size: 25px;
+  color: #2B2D3A;
+}
+p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #515151;
+  line-height: 25px;
+}
+.my-btn {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 400;
+  background-image: linear-gradient(to right, #5AAFF3, #3167D2);
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  padding: 12px 15px;
+  min-width: 200px;
+  white-space: nowrap;
+}
+.my-btn:hover {
+  background-image: linear-gradient(to left, #5AAFF3, #3167D2);
+  color: #fff;
+}
+.my-btn-outline {
+  font-size: 13px;
+  color: #2B2D3A;
+  font-weight: 400;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  padding: 12px 15px;
+  min-width: 200px;
+  white-space: nowrap;
+}
+.my-btn-outline:hover {
+  background-image: linear-gradient(to left, #5AAFF3, #3167D2);
+  color: #fff;
+}
+
+/*// end of common css */
+
+/* main css start */
+
+
+/* === header section start === */
+#header{
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+.navbar-light .navbar-brand {
+  max-width: 300px;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-size: 14px;
+  color: #515151;
+  font-weight: 600;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #2196F3;
+}
+.header .navbar-nav {
+  position: relative;
+}
+.header .navbar-nav::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 15px;
+  background: #515151;
+}
+.header .my-btn.login-btn {
+  background: transparent;
+  color: #219EF3;
+  font-weight: 600;
+}
+/* .header .my-btn.login-btn:hover {
+  background-image: linear-gradient(to left, #5AAFF3, #3167D2);
+  color: #fff;
+} */
+.header .my-btn,
+.header .my-btn-outline {
+  min-width: auto;
+  padding: 10px 20px;
+}
+/* ===//end of header section === */
+
+/* === banner section start === */
+.banner {
+  padding-top: 100px;
+}
+.banner .sec-heading {
+  margin-bottom: 35px;
+}
+.banner .bnr-bottom p{
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.banner .bnr-bottom span {
+  color: #2196F3;
+}
+/* ===//end of banner section === */
+
+/* === quote section start === */
+.quote {
+  padding: 80px 0;
+}
+.quote .icon {
+  width: 30px;
+  margin-right: 10px;
+}
+.quote blockquote {
+  font-size: 25px;
+  /* font-style: italic; */
+  font-weight: 300;
+  color: #3D3D3D;
+  line-height: 30px;
+  text-align: center;
+  margin: 40px 0;
+}
+.quote ul li {
+  display: inline-block;
+  padding: 10px;
+}
+/* ===//end of quote section === */
+
+/* === career-support section start === */
+.career-support .support-item-col {
+  margin-bottom: 30px;
+}
+.career-support{
+  background: url(../images/career_bg.png) no-repeat bottom center;
+}
+.career-support .support-item {
+  padding: 30px;
+  /* border: 1px solid rgba(0, 0, 0, .15); */
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 11px rgba(195,208,216,.7);
+  box-shadow: 0 2px 11px rgba(195,208,216,.7);
+  /* height: 100%; */
+  transition: all 0.4s cubic-bezier(0.5, 0.78, 0, 1.6);
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.78, 0, 1.6);
+  -moz-transition: all 0.4s cubic-bezier(0.5, 0.78, 0, 1.6);
+  display: block;
+  background: #fff;
+}
+.career-support .support-item:hover {
+  transform: scale(1.06)
+}
+.career-support .icon {
+  width: 80px;
+  min-height: 100px;
+}
+.career-support .top-title {
+  min-height: 125px;
+}
+.career-support .support-item p {
+  min-height: 150px;
+}
+.career-support .support-link {
+  color: #2B2D3A;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 20px;
+  display: block;
+  line-height: 1;
+}
+.support-link.cover-letter {
+  white-space: pre-line;
+}
+.career-support .support-link:hover {
+  color: #2196F3;
+}
+.career-support .support-link i {
+  margin: 10px 0 0 5px;
+  transition: all 0.2s linear;
+}
+.career-support .support-link:hover i {
+  padding-left: 10px;
+}
+/* ===//end of career-support section === */
+
+/* === our-customer section start === */
+.main-customer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-gap: 30px;
+}
+/* ===//end of our-customer section === */
+
+/* === steps section start === */
+.steps {
+  padding: 80px 0 0 0;
+  position: relative;
+  background: url(../images/wev_bg.png) no-repeat top center/cover;
+}
+.steps-bg {
+  position: absolute;
+  position: absolute;
+  width: 100%;
+  bottom: -150px;
+  z-index: -1;
+  /* display: none; */
+}
+.steps .pt-100 {
+  padding-top: 100px;
+}
+.steps .icon {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+}
+.steps .top-title {
+  margin: 30px 0 0 0;
+  line-height: 25px;
+  min-height: 90px;
+}
+.steps .top-title img {
+  width: 70px;
+  position: absolute;
+  top: -10px;
+}
+.steps-item.steps-1 .top-title img {
+ left: -50px;
+}
+.steps-item.steps-2 .top-title img {
+ left: -45px;
+}
+.steps-item.steps-3 .top-title img {
+ left: -50px;
+}
+.steps ul li {
+  display: inline-block;
+  padding: 10px;
+}
+/* ===//end of steps section === */
+
+/* === get-support section start === */
+.get-support {
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+.get-support .card {
+  padding: 50px;
+  border-radius: 30px;
+}
+.get-support #more-text {
+  transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+}
+.get-support #more-text ul {
+  list-style: none;
+  line-height: 15px;
+  margin-left: 20px;
+}
+.get-support #more-text ul li::before {
+  content: "\2022";
+  color: #515151;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+.get-support .more-btn {
+  color: #4F4F51;
+  text-decoration-color: #2196F3;
+  padding: 20px 0 0 0;
+  display: -webkit-inline-box;
+  display: inline-box;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid #2196F3;
+  font-weight: 600;
+}
+.get-support ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.get-support .my-btn,
+.get-support .my-btn-outline {
+  font-size: 12px;
+}
+/* ===//end of get-support section === */
+
+/* === faq section start === */
+.faq {
+  background: url(../images/faq_bg.png) no-repeat center center;
+  padding: 95px 0;
+}
+#accordion .card {
+  border: none;
+  background-color: transparent;
+}
+#accordion .card-header {
+  background: transparent;
+  border-bottom: 1px solid #dde3f0;
+  color: #2196F3;
+  padding: .75rem .0rem;
+}
+#accordion .btn.btn-link,
+#accordion .btn-link:hover {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2B2D3A;
+  display: flex;
+  align-items: baseline;
+  text-align: left;
+}
+#accordion .btn.btn-link i {
+  font-size: 18px;
+  color: #2196F3;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+}
+#accordion .btn.btn-link.collapsed i {
+  transform: rotate(180deg);
+}
+#accordion .card-body {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+/* ===//end of faq section === */
+
+/* === footer section start === */
+.footer {
+  background: #444444;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+.footer .s-icon {
+  padding-top: 10px;
+}
+.footer .footer-right a,
+.footer p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 350;
+  color: #fff;
+}
+.footer .footer-right a,
+.footer span {
+  color: #2196F3
+}
+/* ===//end of footer section === */
+
+/* color: #2196F3;
+background: #2196F3; */
